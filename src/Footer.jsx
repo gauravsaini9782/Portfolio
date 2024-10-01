@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
               <h3 className="text-xl font-bold">Quality Delivery</h3>
-              <p className="text-gray-400">On-time and top-quality services every time.</p>
+              <p className="text-gray-400">On-time and top-quality.</p>
             </div>
           </div>
         </div>
