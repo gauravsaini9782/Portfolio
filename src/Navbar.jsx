@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,22 +10,61 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold">Logo</h1>
+            <img
+              src="/images/logo trans.png" // Replace with your logo URL
+              alt="Logo"
+              className="h-12 w-55 mr-2" // Adjust height, width, and margin as needed
+            />
           </div>
 
-          {/* Links */}
+          {/* Links for Desktop */}
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-orange-500">Home</a>
-            <a href="#about" className="hover:text-orange-500">About</a>
-            <a href="#services" className="hover:text-orange-500">Services</a>
-            <a href="#portfolio" className="hover:text-orange-500">Portfolio</a>
-            <a href="#contact" className="hover:text-orange-500">Contact</a>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              About
+            </Link>
+            <Link
+              to="service"
+              smooth={true}
+              duration={500}
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              Services
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              Portfolio
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* Hire Me Button */}
           <div className="hidden md:flex">
             <a
-              href="#hire-me"
+              href="mailto:gauravjetpuriya888@gmail.com?subject=Hire%20Me&body=Hi,%20I'm%20interested%20in%20hiring%20you!"
               className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
             >
               Hire Me
@@ -48,7 +88,9 @@ const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                  d={
+                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                  }
                 />
               </svg>
             </button>
@@ -60,24 +102,55 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#home" className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)} // Close menu after clicking
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 cursor-pointer"
+            >
               Home
-            </a>
-            <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500">
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)} // Close menu after clicking
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 cursor-pointer"
+            >
               About
-            </a>
-            <a href="#services" className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500">
+            </Link>
+            <Link
+              to="service"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)} // Close menu after clicking
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 cursor-pointer"
+            >
               Services
-            </a>
-            <a href="#portfolio" className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500">
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)} // Close menu after clicking
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 cursor-pointer"
+            >
               Portfolio
-            </a>
-            <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500">
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)} // Close menu after clicking
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 cursor-pointer"
+            >
               Contact
-            </a>
+            </Link>
             <a
-              href="#hire-me"
-              className="block bg-orange-500 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-orange-600">
+              href="mailto:gauravjetpuriya888@gmail.com?subject=Hire%20Me&body=Hi,%20I'm%20interested%20in%20hiring%20you!"
+              className="block bg-orange-500 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-orange-600"
+            >
               Hire Me
             </a>
           </div>

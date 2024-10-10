@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLaptopCode, FaMobileAlt, FaPenFancy, FaVideo, FaPaintBrush, FaDraftingCompass } from 'react-icons/fa'; // Importing appropriate icons
+import { Element } from 'react-scroll';
 
 const ServiceSection = () => {
   const services = [
@@ -36,7 +37,9 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-black text-white">
+    <Element name="service">
+    
+    <section className="py-48 bg-black text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
 
@@ -67,6 +70,7 @@ const ServiceSection = () => {
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 
