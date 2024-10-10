@@ -5,15 +5,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0   w-full z-50 shadow-md">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
               src="/images/logo trans.png" // Replace with your logo URL
               alt="Logo"
-              className="h-12 w-55 mr-2" // Adjust height, width, and margin as needed
+              className="h-12 mr-2" // Adjust height, width, and margin as needed
             />
           </div>
 

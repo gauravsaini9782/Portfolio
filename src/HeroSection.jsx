@@ -80,20 +80,20 @@ const HeroSection = () => {
             </div>
 
             {/* Experience/Stats */}
-            <div className="flex space-x-8 mt-8 bg-white/10 backdrop-blur-md p-6 rounded-lg w-full border border-gray-500">
-              <div className="text-center ">
+            <div className="flex mt-8 bg-white/10 backdrop-blur-md p-6 rounded-lg w-full border border-gray-500 flex-wrap justify-center gap-6 ">
+              <div className="text-center">
                 <h2 className="text-3xl font-bold">5+</h2>
                 <p className="text-gray-400">Years Experience</p>
               </div>
-              <div className="border border-gray-500"></div>
+              <div className="border border-gray-500 hidden sm:block"></div>
 
               <div className="  text-center">
                 <h2 className="text-3xl font-bold">20+</h2>
                 <p className="text-gray-400">Projects Done</p>
               </div>
-              <div className="border border-gray-500"></div>
+              <div className="border border-gray-500 hidden sm:block"></div>
 
-              <div className="text-center ">
+              <div className="text-center">
                 <h2 className="text-3xl font-bold">15+</h2>
                 <p className="text-gray-400">Happy Clients</p>
               </div>

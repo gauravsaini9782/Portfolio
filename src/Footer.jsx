@@ -14,20 +14,20 @@ const Footer = () => {
             design, or branding, we are committed to delivering top-notch
             quality.
           </p>
-          <div className="flex justify-center space-x-8">
-            <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+            <div className="hidden lg:block text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full h-30">
               <h3 className="text-xl font-bold">24/7 Support</h3>
               <p className="text-gray-400">
                 Available anytime you need assistance.
               </p>
             </div>
-            <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full h-30">
               <h3 className="text-xl font-bold">Creative Solutions</h3>
               <p className="text-gray-400">
                 Bringing unique ideas to life for your brand.
               </p>
             </div>
-            <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="text-center p-4 bg-white/10 backdrop-blur-lg rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full h-30">
               <h3 className="text-xl font-bold">Quality Delivery</h3>
               <p className="text-gray-400">On-time and top-quality.</p>
             </div>

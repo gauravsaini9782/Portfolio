@@ -82,7 +82,7 @@ const PortfolioSection = () => {
     return portfolioData[activeTab].map((item, index) => (
       <div
         key={index}
-        className="bg-white/10 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        className="bg-white/10 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 "
       >
         <a href={item.link} target="_blank" rel="noopener noreferrer">
           {/* Thumbnail Image */}
@@ -107,7 +107,7 @@ const PortfolioSection = () => {
           <h2 className="text-4xl font-bold text-center mb-12">My Portfolio</h2>
 
           {/* Tabs for categories */}
-          <div className="flex justify-center space-x-4 mb-8">
+          <div className="flex justify-center gap-4 mb-8  flex-wrap w-full">
             {Object.keys(portfolioData).map((category, index) => (
               <button
                 key={index}
