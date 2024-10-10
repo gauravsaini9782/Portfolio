@@ -67,7 +67,7 @@ const portfolioData = {
       thumbnail: "/images/daniel.png",
     },
     {
-      title: "Logo 2",
+      title: "Logo 3",
       link: "https://www.behance.net/gallery/209652551/Urban-edge/modules/1191183655",
       thumbnail: "/images/Modern Minimalist Graffiti Urban Brand Logo.png",
     },
